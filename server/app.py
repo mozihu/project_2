@@ -33,19 +33,20 @@ def search_comments():
     comments = []
 
     for r in result:
-        if keyword in r[0]:
+        if keyword in r[4]:
             sum_num += 1
             comments.append({
                 'key': sum_num,
-                'comment_content': r[0],
-                'emotion': r[1]
+                'date': r[1],
+                'comment_content': r[4],
+                'emotion': r[5]
             })
 
-            if r[1] == 1:
+            if r[5] == '正面':
                 positive_num += 1
             else:
                 negative_num += 1
-    print(comments)
+    # print(comments)
     return jsonify({
         'sum_num': sum_num,
         'positive_num': positive_num,

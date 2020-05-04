@@ -4,6 +4,7 @@ import InputSearch from '@/components/InputSearch'
 
 Vue.use(Router)
 
+
 export default new Router({
   routes: [
     {
