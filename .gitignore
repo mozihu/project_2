@@ -1,5 +1,6 @@
-/yf_dianping/*
+/data/ratings.csv
+/data/reviews.csv
 
 
-/model_training/movie_comments.csv
-/model_training/model.normal
+/model/movie_comments.csv
+/model/model.normal
