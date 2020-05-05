@@ -30,7 +30,9 @@ const columns = [
   {
     title: "日期",
     dataIndex: "date",
-    width: 50
+    width: 50,
+    defaultSortOrder: "descend",
+    sorter: (a, b) => new Date(a.date) - new Date(b.date)
   },
   {
     title: "评论内容",
